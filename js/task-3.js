@@ -1,3 +1,4 @@
 function checkForSpam(message) {
-  return message.includes(`spam`, `sale`) ? true : false;
+  let newMessage = message.toLowerCase();
+  return message.includes('spam', 'sale') ? true : false;
 }
